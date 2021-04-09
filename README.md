@@ -22,7 +22,12 @@ Output will be produced by this formula:<br />
 To understand it well, let's simplify it. We can now set ![equation](https://latex.codecogs.com/png.image?\dpi{110}%20\theta%20=%200) and ![equation](https://latex.codecogs.com/png.image?\dpi{110}%20W=\begin{bmatrix}3%20\\%200\end{bmatrix}) . Now, formula will look like this:<br />
 ![equation](https://latex.codecogs.com/png.image?\dpi{110}%20\begin{bmatrix}3\\0\end{bmatrix}^T%20*%20X\geqslant%200)<br />
 From matrix multiplication rules we know that ![equation](https://latex.codecogs.com/png.image?\dpi{110}%20W^TX) will return integer. Whether this integer is less then 0 or more, we can classify this data sample to class 0 or 1.<br />
-Changing value of Θ will move our red [hyperplane](https://en.wikipedia.org/wiki/Hyperplane) from (0,0). This will help to divide data into classes if we needed so.
+
+<img src="Assets/vector-of-weights-1.png" width="371" height="371"/>
+
+Changing value of Θ will move our red [hyperplane](https://en.wikipedia.org/wiki/Hyperplane) from (0,0). This will help to divide data into classes if we needed so:<br />
+
+<img src="Assets/vector-of-weights-2.png" width="371" height="371"/>
 
 ## Perceptron learning process
 
@@ -48,7 +53,9 @@ When we train our perceptron, we use [supervised training](https://en.wikipedia.
 > **Θ** training formula:<br /><br />
 ![equation](https://latex.codecogs.com/png.image?\dpi{110}%20\theta^\prime=\theta+(d-y)\alpha)
 
-When perceptron training process is done, on 3d scatter plot it should look like this:
+When perceptron training process is done, when reviewing 3D scatter plot, [plane from vector and point](https://mathworld.wolfram.com/Plane.html) (**W** and **Θ**) should look like this:
+
+<img src="Assets/trained-perceptron.png" width="333" height="228"/>
 
 ## Program workflow
 ### 1. Input files
@@ -60,8 +67,8 @@ Provide path to **train set** and **test set**. Both should:
 Load data.
 If files were read correctly, input fields should appear green.
 ### 2. Training and testing
-When data has been loaded properly, next step is to set value of **alpha**. Then, you can start process of training perceptron with **train set** data. This is all done by clicking "Train perceptron" button. 3D scatter plots should appear. They represent every 3d projection of all data dimensions. For example, if your data has 4 numeric columns, ![equation](https://latex.codecogs.com/png.image?\dpi{110}%20\binom{4}{3}) plots should appear.<br />
-On these 3D plots, you can observe how **W** plane is changing due to learning process (including **Θ**). Currently computed data sample is highlighted on red.<br />
+When data has been loaded properly, next step is to set value of **alpha**. Then, you can start process of training perceptron with **train set** data. This is all done by clicking "Train perceptron" button. 3D scatter plots should appear. They represent every 3D projection of all data dimensions. For example, if your data has 4 numeric columns, ![equation](https://latex.codecogs.com/png.image?\dpi{110}%20\binom{4}{3}) plots should appear.<br />
+On these 3D plots, you can observe how **W** plane is changing due to learning process (including **Θ**). Currently computed data sample is highlighted with red.<br />
 When learning process is done, you can test accuracy of trained perceptron with **test set** data. Scores of tests will be shown afterwards.
 ### 3. Classify data
-If you are happy with scores of perceptron classification, here you can classify unclassified samples. Csv format expected.
+If you are happy with scores of perceptron classification, here you can classify unclassified samples. Csv format required.
