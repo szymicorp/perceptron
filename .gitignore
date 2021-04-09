@@ -1,0 +1,15 @@
+# JetBrains
+*.idea
+
+# VSCode
+*.vscode
+
+# Csv files
+*.csv
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Mac
+.DS_Store
