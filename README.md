@@ -6,6 +6,8 @@
 
 **Neuron** receives and analysis data from [dendrites](https://en.wikipedia.org/wiki/Dendrite). It performs simple biological tasks to support thinking processes in brain. [Perceptron](https://en.wikipedia.org/wiki/Perceptron) is artificial representation of it. To understand the artificial concept, image below shows real neuron described by math.
 
+<img src="Assets/neuron.png" width="480" height="240"/>
+
 <dl>
   <dt>X</dt>
   <dd>1-dimensional matrix of input values</dd>
